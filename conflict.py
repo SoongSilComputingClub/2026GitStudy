@@ -9,7 +9,10 @@ def play_game():
     
     if player == computer:
         print("비겼습니다!")
-    # TODO: 승패 로직 구현 필요
+    elif player == "가위" and computer == "보":
+        print("당신의 승리!")
+    else:
+        print("컴퓨터의 승리!")
     
 if __name__ == "__main__":
     play_game()
