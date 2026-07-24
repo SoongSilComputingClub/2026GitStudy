@@ -9,8 +9,10 @@ def play_game():
     
     if player == computer:
         print("비겼습니다!")
-    elif player == "가위" and computer == "보":
-      print("당신의 승리!")
+    elif(player=="가위" and computer=="보") or \
+        (player=="바위" and computer=="가위") or \
+        (player=="보" and computer=="바위"):
+          print("당신의 완벽한 승리!")
     else:
       print("컴퓨터의 승리!")
     
